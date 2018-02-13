@@ -1,82 +1,68 @@
-avatar = document.getElementById("img1");
-center_div = document.getElementById("center");
-menuChange = 0;
-var num = 0;
-var num2 = 0;
-var avatarsize = avatar.height;
-document.getElementById("avatar1").addEventListener("click", function(){
-    avatar.src = "ava1.png";
+bg1 = document.getElementById("bg1");
+bg2 = document.getElementById("bg2");
+bg3 = document.getElementById("bg3");
+bg4 = document.getElementById("bg4");
+ch1 = document.getElementById("ch1");
+ch2 = document.getElementById("ch2");
+ch3 = document.getElementById("ch3");
+plus = document.getElementById("plus")
+minus = document.getElementById("minus")
+var num1 = 100;
+var num2 = 70;
+
+bg1.addEventListener('click', function(){
+    ch1.style.backgroundImage = "url(i1.jpg)";
+    ch2.style.backgroundImage = "url(i2.jpg";
+    ch3.style.backgroundImage = "url(i3.jpg)";
 });
 
-document.getElementById("avatar2").addEventListener("click", function(){
-    avatar.src = "ava2.png";
-});
-
-document.getElementById("right").addEventListener("click", function(){
-	num = num + 7;
-	center_div.style.left = num+"px"; 
-	});
-	
-document.getElementById("left").addEventListener("click", function(){
-	num = num - 7;
-	center_div.style.left = num+"px";
-	
-	});
-
-document.getElementById("up").addEventListener("click", function(){
-	num2 = num2 + 7;
-	center_div.style.bottom = num2+"px";
-	});
-	
-document.getElementById("down").addEventListener("click", function(){
-	num2 = num2 - 7;
-	center_div.style.bottom = num2+"px";
-	});
-	
-	
-document.getElementById("plus").addEventListener("click", function(){
-    avatarsize *= 1.01;
-    avatar.style.height = avatarsize+"px";
-});
-
-document.getElementById("minus").addEventListener("click", function(){
-    avatarsize *= 0.99;
-    avatar.style.height = avatarsize+"px";
-});
-
-avatar.addEventListener("click", function() {
-    document.getElementById("buttons").style.opacity = "0";
-	document.getElementById("buttons2").style.opacity = "0";
-});
-
-document.getElementById("header").addEventListener("click", function() {
-    document.getElementById("buttons").style.opacity = "1";
-	document.getElementById("buttons2").style.opacity = "1";
-});
-
-document.getElementById("menuB").addEventListener("click", function() {
-	if (menuChange == 0) {
-		document.getElementById("menu").style.right = "0px";
-		menuChange = menuChange + 1
-	
-	}else {
-		document.getElementById("menu").style.right = "-75px";
-		menuChange = menuChange - 1
-	}
+    
+bg2.addEventListener('click', function(){
+    ch1.style.backgroundImage = "url(i4.jpg)";
+    ch2.style.backgroundImage = "url(i5.jpg)";
+    ch3.style.backgroundImage = "url(i6.jpg)";
 });
 
 
-document.getElementById("but1").addEventListener("click", function() {
-	document.getElementById("hat").style.display = "block";
-
+bg3.addEventListener('click', function(){
+    ch1.style.backgroundImage = "url(i7.jpg)";
+    ch2.style.backgroundImage = "url(i8.jpg)";
+	ch3.style.backgroundImage = "url(i9.jpg)";
 });
 
-document.getElementById("but2").addEventListener("click", function() {
-	document.getElementById("shirt").style.display = "block";
-
+bg4.addEventListener('click', function(){
+    ch1.style.backgroundImage = "url(i10.jpg)";
+    ch2.style.backgroundImage = "url(i11.jpg)";
+    ch3.style.backgroundImage = "url(i12.jpg)";
 });
 
-document.getElementById("but3").addEventListener("click", function() {
-	document.getElementById("bow").style.display = "block";
-
+ch1.addEventListener("mouseenter", function(){
+		zoom.style.backgroundImage = ch1.style.backgroundImage;
 });
+
+ch2.addEventListener("mouseenter", function(){
+		zoom.style.backgroundImage = ch2.style.backgroundImage;
+});
+
+ch3.addEventListener("mouseenter", function(){
+		zoom.style.backgroundImage = ch3.style.backgroundImage;
+});
+
+document.getElementById('zoom').addEventListener('click', function(){
+    document.getElementById('zoomControls').style.display = 'block';
+});
+
+plus.addEventListener("click", function(){
+		num1 += 10;
+		num2 += 7;
+		zoom.style.width = num1+"%";
+		zoom.style.height = num1+"%";
+});
+
+minus.addEventListener("click", function(){
+		num1 -= 10;
+		num2 -= 7;
+		zoom.style.width = num1+"%";
+		zoom.style.height = num2+"%";
+});
+
