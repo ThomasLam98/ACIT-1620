@@ -1,70 +1,121 @@
-#app1 {
-	width:70vw;
-	height:70vh;
-	position:fixed;
-	margin:auto;
-	top:0px;
-	bottom:0px;
-	right:0px;
-	left:0px;
+#logo {
+    height:100px;
 }
 
-#zoom {
-	position:relative;
-	width:100%;
-	height:70%;
-	background-size:cover;
-	background-position:center;
-	background-repeat:no-repeat;
-	margin-bottom:10px;
-	margin-left:auto;
-	margin-right:auto;
-	max-width:100%;
-	max-height:70%;
+body {
+    margin: 0px;
 }
 
-#zoomControls {
-	position:absolute;
-	right:0px;
-	top:0px;
-	width:75px;
-	display:none;
+#home {
+    width:100vw;
 }
 
-#plus {
+#header {
+    width:100%
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+#navigation {
     width:100%;
-    height:auto;
 }
 
-#minus {
+
+#bg1 {background-image: url(bg1.jpg)}
+
+#bg2 {background-image: url(bg2.jpg)}
+
+#bg3 {background-image: url(bg3.jpg)}
+
+#bg4 {background-image: url(bg4.jpg)}
+
+.item {
     width:100%;
-    height:auto;
+    height:20vh;
+    position: relative;
+    background-size: cover;
+    background-position: center;
 }
 
-#controls {
-	text-align:center;
+.subTitleBox {
+    width:30%;
+    height:100%;
+    margin: auto;
+    opacity: 0.5; 
+    background-color: dimgray;
 }
 
-
-.bgthumbs { 
-	display:inline-block;
-	width:75px;
-	height:75px;
-	margin:5px;
-	background-size:cover;
-	background-position:center;
-	border-radius:100px; 
-	border:2px solid red;
-	background-repeat:no-repeat;
-}
-
-#bg {
-    position:fixed;
-    left:0px;
+.subTitle {
+    position: absolute;
+    margin: auto;
+    right: 0px;
+    left: 0px;
     top:0px;
+    bottom: 0px;
+    width: 100px;
+    height:30px;
+    font-size: 20px;
+}
+
+#main{
+    top:0px;
+    left:0px;
     width:100vw;
     height:100vh;
-    z-index: -1;
-    background-size: cover;
-    background-position: bottom;
+    background-color: rgba(0, 0, 0, 0, 0.5);
+    display: none;
+    position: fixed;
 }
+
+#mcontents {
+    background-color: white;
+	position: absolute;
+    margin: auto;
+    right: 0px;
+	left: 0px;
+	top: 0px;
+	bottom: 0px;
+	width: 75%;
+	height: 40%;
+}
+
+#mc3{
+    position: absolute;
+    background-size: 100px;
+	height: 100px;
+	width: 100px;
+	right: 100px;
+	top: 100px;
+	margin: auto;
+    background-position: center;
+	background-repeat: no-repeat;
+
+}
+
+#mc2{
+    position: absolute;
+    background-size: 100px;
+	height: 100px;
+	width: 100px;
+    left: 100px;
+	right: 100px;
+	top: 100px;
+	margin: auto;
+    background-position: center;
+	background-repeat: no-repeat;
+}
+
+#mc1{
+    position: absolute;
+    background-size: 100px;
+	height: 100px;
+	width: 100px;
+    left: 100px;
+	top: 100px;
+	margin: auto;
+    background-position: center;
+	background-repeat: no-repeat;
+}
+
+

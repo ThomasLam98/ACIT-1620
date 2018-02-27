@@ -1,53 +1,61 @@
-<DOCTYPE! html>
+<!DOCTYPE html>
 <html>
-	<head>
-		<title> Test1</title>
-		<link href="index.css" type="text/css" rel="stylesheet"/>
-		<link href="menu.css" type="text/css" rel="stylesheet"/>
-		
-	</head>
-	
-	<body>
-	
-		<div id="bg">
-		</div>
-		
-		<div id="app1">
-			<div id="zoom">
-				<div id="zoomControls">
-					<button id="plus" class = "buttons">+</button>
-					<button id="minus" class = "buttons">-</button>
+  <head>
+    <title>Home</title>
+    <link href="index.css" type="text/css" rel="stylesheet"/>
+    <link href="menu.css" type="text/css" rel="stylesheet"/>
+    <link href="demo.css" type="text/css" rel="stylesheet"/>
+  </head>
+    
+    <body>
+        <div id='menu'>
+            <img src="down.png" id='downImg'/>
+            <div id ='idlinks'>
+                <a href="index.html">Home</a>
+            <hr/>
+          <a href="demo.html">Demo</a>
+            </div>
+        </div>
+             <div id ='header'>
+                <img src ='logo.png' id ='logo'/>
+            </div>
+        <div id ='home'>
+            <div id = 'navigation'>
+				<div id='bg1' class="item" >
+					<div class='subTitleBox'>
+				    <div class='subTitle'>Head Gears</div>
+					</div>
 				</div>
-			</div>	
-			
-			<div id="controls">
-			
-				<button type="button" id="previous">Previous</button>
-				<button id="bg1" >BG1</button>
-				<button id="bg2" >BG2</button>
-				<button id="bg3" >BG3</button>
-				<button id="bg4" >BG4</button>
-				<button id="next" >Next</button>
-					<br/>
-				<div id="ch1" class="bgthumbs"></div>
-				<div id="ch2" class="bgthumbs"></div>
-				<div id="ch3" class="bgthumbs"></div>
+				<div id ='bg2' class='item'>
+					<div class='subTitleBox'>
+				    <div class='subTitle'>Body Gears</div>
+					</div>
+				</div>			
+				<div id="bg3" class="item" >
+					<div class='subTitleBox'>
+				    <div class="subTitle">Leg Gears</div>
+					</div>
+				</div>
+				<div class="item" id="bg4">
+					<div class='subTitleBox'>
+				    <div class='subTitle'>Foot Gears</div>
+					</div>
+				</div>
 			</div>
-		</div>
-		
-		<div id="menu">
-				<button id="makeBg" class = "buttons">Make BG</button>
-				<button id="reset" class = "buttons">Reset</button>
-				<button id="hideApp" class = "buttons">Hide App</button>
-				<button id="showApp" class = "buttons">Show App</button>
-				<button id="open" class = "buttons">Open</button>
-				<button id="close" class = "buttons">Close</button>
-		</div>
-		
-		
-		<script src ="index.js"></script>
-		<script src ="menu.js"></script>
-	</body>
-	
-	
+            <div id='main'>
+                <div id='mcontents'>
+                    <div id="header">Gear</div>
+                    <div id = 'mc1'></div>
+                    <div id = 'mc2'></div>
+                    <div id = 'mc3'></div>
+                </div>
+            
+            </div>
+        </div>
+
+
+        <script src ="index.js"></script>
+        <script src ="menu.js"></script>
+        <script src ="demo.js"></script>
+    </body> 
 </html>

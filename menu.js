@@ -1,24 +1,13 @@
-document.getElementById("open").addEventListener("click", function(){
-	document.getElementById("menu").style.left = "0px";
-});
+downImg = document.getElementById('downImg');
+menuChange = 0;
 
-document.getElementById("close").addEventListener("click", function(){
-	document.getElementById("menu").style.left = "-110px";
+downImg.addEventListener("click", function() {
+	if (menuChange == 0) {
+		document.getElementById("menu").style.top = "0px";
+		menuChange = menuChange + 1
+	
+	}else {
+		document.getElementById("menu").style.top = "-70px";
+		menuChange = menuChange - 1
+	}
 });
-
-document.getElementById("makeBg").addEventListener("click", function(){
-		bg.style.backgroundImage = zoom.style.backgroundImage;
-});
-
-document.getElementById("reset").addEventListener("click", function(){
-		bg.style.backgroundImage = "none";
-});
-
-document.getElementById("showApp").addEventListener("click", function(){
-		app1.style.display = "block";
-});
-
-document.getElementById("hideApp").addEventListener("click", function(){
-		app1.style.display = "none";
-});
-
